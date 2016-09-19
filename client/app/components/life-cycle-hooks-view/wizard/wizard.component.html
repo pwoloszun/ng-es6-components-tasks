@@ -1,0 +1,36 @@
+<div class="wizard-container">
+  <ul class="nav nav-pills">
+    <li>
+      <a>
+        TODO
+      </a>
+    </li>
+  </ul>
+  <div class="progress-bar-container">
+    <div class="progress">
+      <div class="progress-bar progress-bar-success"
+           role="progressbar" aria-valuemin="0" aria-valuemax="100"
+           aria-valuenow="65" style="width: 65%;">
+        <span>65% Complete</span>
+      </div>
+    </div>
+  </div>
+  <hr/>
+  <div ng-transclude></div>
+  <hr/>
+  <div class="wizard-pager">
+    <!-- TODO: dynamically enable/disable next/prev -->
+    <ul class="pager">
+      <li class="previous">
+        <a>
+          <span aria-hidden="true">&larr;</span> Previous
+        </a>
+      </li>
+      <li class="next" class="disabled">
+        <a>
+          Next <span aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

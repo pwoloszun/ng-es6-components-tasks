@@ -1,0 +1,10 @@
+<div class="tabs-container">
+  <ul class="nav nav-tabs tabs-list">
+    <li ng-repeat="tab in $ctrl.tabs" ng-class="{active: $ctrl.isSelectedTab(tab)}">
+      <a ng-click="$ctrl.selectTab($index)">
+        {{tab.label}}
+      </a>
+    </li>
+  </ul>
+  <div ng-transclude class="tabs-content"></div>
+</div>
